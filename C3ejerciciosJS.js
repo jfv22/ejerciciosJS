@@ -14,5 +14,9 @@ const personajesSimpsons = [
    // EJERCICIO 1
    const personajesMayoresDeEdad = personajesSimpsons.filter(personaje => personaje.edad > 18)
    console.log(personajesMayoresDeEdad);
+
+   // EJERCICIO 2
+   const totalEdades = personajesMayoresDeEdad.reduce((sumatoria, personaje) => sumatoria + personaje.edad,0)
+   console.log(totalEdades);
    
     
