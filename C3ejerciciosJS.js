@@ -18,5 +18,10 @@ const personajesSimpsons = [
    // EJERCICIO 2
    const totalEdades = personajesMayoresDeEdad.reduce((sumatoria, personaje) => sumatoria + personaje.edad,0)
    console.log(totalEdades);
+
+   // EJERCICIO 3
+   const nombresMayoresDeEdad = personajesMayoresDeEdad.map(personaje => personaje.nombre);
+   console.log(nombresMayoresDeEdad);
+
    
     
