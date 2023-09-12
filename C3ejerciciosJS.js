@@ -11,5 +11,8 @@ const personajesSimpsons = [
     { nombre: "Martin", edad: 10, rol: "Compañero de clase" }
     ];
 
+   // EJERCICIO 1
+   const personajesMayoresDeEdad = personajesSimpsons.filter(personaje => personaje.edad > 18)
+   console.log(personajesMayoresDeEdad);
    
     
