@@ -29,4 +29,13 @@ const personajesSimpsons = [
    const personajesActualizados = [...personajesMayoresDeEdad, ...personajesMenoresDeEdad] 
    console.log(personajesActualizados); 
    
+   // EJERCICIO 5
+   const personajesNuevos = [
+    { nombre: "Moe", edad: 42, rol: "Cantinero" },
+    { nombre: "Monty", edad: 126, rol: "Jefe" },
+    { nombre: "Gorgory", edad: 41, rol: "Policia" },
+    ];
+
+    const listadoFinal = [...personajesActualizados, ...personajesNuevos]
+    console.log(listadoFinal);
    
