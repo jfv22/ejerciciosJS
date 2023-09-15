@@ -12,7 +12,7 @@ const personajesSimpsons = [
     ];
 
    // EJERCICIO 1
-   const personajesMayoresDeEdad = personajesSimpsons.filter(personaje => personaje.edad > 18)
+   const personajesMayoresDeEdad = personajesSimpsons.filter(personaje => personaje.edad >= 18)
    console.log(personajesMayoresDeEdad);
 
    // EJERCICIO 2
@@ -23,5 +23,10 @@ const personajesSimpsons = [
    const nombresMayoresDeEdad = personajesMayoresDeEdad.map(personaje => personaje.nombre);
    console.log(nombresMayoresDeEdad);
 
+   // EJERCICIO 4
+   let personajesMenoresDeEdad = personajesSimpsons.filter(personaje => personaje.edad < 18)
+   personajesMenoresDeEdad.map(personaje => personaje.rol = "Estudiante")
+   const personajesActualizados = [...personajesMayoresDeEdad, ...personajesMenoresDeEdad] 
+   console.log(personajesActualizados); 
    
-    
+   
